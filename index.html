@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css" type = "text/css">
+    <title>Caso medico</title>
+</head>
+<body>
+    <div class="form-container">
+        <form onSubmit={event.preventDefault();}>
+            <h2>Ingrese su genero</h2>
+            <input id = "hombre" type="radio" name="gender" value="male" text = "Hombre">
+            <label for = "hombre">Hombre</label>
+            <input id = "mujer" type="radio" name="gender" value="female" text = "Mujer">
+            <label for = "mujer">Mujer</label>
+            <button id = "submit-genero">Continuar</button>
+        </form>
+        
+        <form id = "form2" hidden>
+            <input type="text" name="example" list="exampleList">
+            <datalist id="exampleList">
+                <option value="A">  
+                <option value="B">
+            </datalist>
+        </form>
+    </div>
+    <script src = "app.js"></script>
+</body>
+</html>
