@@ -8,16 +8,20 @@
     <title>Caso medico</title>
 </head>
 <body>
+    <h1>Como te sientes?</h1>
     <div class="form-container">
-        <form onSubmit={event.preventDefault();}>
+        <form id = "form1" onSubmit={event.preventDefault();}>
             <h2>Ingrese su genero</h2>
-            <input id = "hombre" type="radio" name="gender" value="male" text = "Hombre">
-            <label for = "hombre">Hombre</label>
-            <input id = "mujer" type="radio" name="gender" value="female" text = "Mujer">
-            <label for = "mujer">Mujer</label>
-            <button id = "submit-genero">Continuar</button>
+            <div class="input-container">
+                <input id = "hombre" type="radio" name="gender" value="male" text = "Hombre">
+                <label for = "hombre">Hombre</label>
+                <input id = "mujer" type="radio" name="gender" value="female" text = "Mujer">
+                <label for = "mujer">Mujer</label>
+            </div>
+            <div class = "button-container">
+                <button id = "submit-genero">Continuar</button>
+            </div>
         </form>
-        
         <form id = "form2" hidden>
             <input type="text" name="example" list="exampleList">
             <datalist id="exampleList">
