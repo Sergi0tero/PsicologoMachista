@@ -10,24 +10,47 @@
 <body>
     <h1>Como te sientes?</h1>
     <div class="form-container">
-        <form id = "form1" onSubmit={event.preventDefault();}>
+        <form id = "formGenero" onSubmit={event.preventDefault();}>
             <h2>Ingrese su genero</h2>
             <div class="input-container">
-                <input id = "hombre" type="radio" name="gender" value="male" text = "Hombre">
+                <input id = "hombre" type="radio" name="gender" value="hombre" text = "Hombre">
                 <label for = "hombre">Hombre</label>
-                <input id = "mujer" type="radio" name="gender" value="female" text = "Mujer">
+                <input id = "mujer" type="radio" name="gender" value="mujer" text = "Mujer">
                 <label for = "mujer">Mujer</label>
             </div>
             <div class = "button-container">
                 <button id = "submit-genero">Continuar</button>
             </div>
         </form>
-        <form id = "form2" hidden>
-            <input type="text" name="example" list="exampleList">
-            <datalist id="exampleList">
-                <option value="A">  
-                <option value="B">
-            </datalist>
+        
+        <form id = "formSentimientoGeneral" onSubmit={event.preventDefault();}>
+            <h2>Como se siente?</h2>
+            <div class="input-container">
+                <input id = "bien" type="radio" name="generalFeeling" value="bien" text = "Hombre">
+                <label for = "bien">Bien</label>
+                <input id = "mal" type="radio" name="generalFeeling" value="mal" text = "Mujer">
+                <label for = "mal">Mal</label>
+                <input id = "neutral" type="radio" name="generalFeeling" value="neutro" text = "Mujer">
+                <label for = "neutral">Neutral</label>
+            </div>
+            <div class = "button-container">
+                <button id = "submit-sentimientoGeneral">Continuar</button>
+            </div>
+        </form>
+
+        <form id = "formSentimientoEspecifico" onSubmit={event.preventDefault();}>
+            <h2>Podrias especificar más?</h2>
+            <div class="input-container">
+                <select id = "feelingsComboBox" value = "feelings">
+                </select>
+            </div>
+            <div class = "button-container">
+                <button id = "submit-sentimientoEspecifico">Continuar</button>
+            </div>
+        </form>
+
+        <form id = "formRespuesta" onSubmit={event.preventDefault();}>
+            <h2>Esto es lo que podemos decir sobre tus problemas!</h2>
         </form>
     </div>
     <script src = "app.js"></script>

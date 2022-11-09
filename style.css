@@ -32,3 +32,19 @@ form{
 body{
     background-image: url("https://www.bypeople.com/wp-content/uploads/2015/05/css-dark-chain-background.png");
 }
+
+#formGenero{
+    display: block;
+}
+
+#formSentimientoGeneral{
+    display: none;
+}
+
+#formSentimientoEspecifico{
+    display: none;
+}
+
+#formRespuesta{
+    display: none;
+}
