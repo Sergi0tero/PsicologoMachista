@@ -102,168 +102,174 @@ var app = function(){
 
     elegirRespuesta = function(){
       var val = Math.floor(Math.random() * 20);
-      console.log(generoElegido)
-      if (generoElegido == "hombre") {
-        if (val === 1) {
-          desplegarRespuesta("Madure");
+      console.log(sentimientoGeneral);
+      if (sentimientoGeneral == "bien"){
+          desplegarRespuesta("Que bueno! Me alegro!");
+      }else if(sentimientoGeneral == "neutro"){
+          desplegarRespuesta("Podria ser peor");
+      }else{
+        if (generoElegido == "hombre") {
+          if (val === 1) {
+            desplegarRespuesta("Madure");
+          }
+
+          if (val === 2) {
+            desplegarRespuesta("Deje de chillar y sea hombre");
+          }
+
+          if (val === 3) {
+            desplegarRespuesta("No sea loca");
+          }
+
+          if (val === 4) {
+            desplegarRespuesta("Que delicado para ser hombre");
+          }
+
+          if (val === 5) {
+            desplegarRespuesta("Sea hombre y listo");
+          }
+
+          if (val === 6) {
+            desplegarRespuesta("No llore tanto");
+          }
+
+          if (val === 7) {
+            desplegarRespuesta("Ese se su problema, no fastidie");
+          }
+
+          if (val === 8) {
+            desplegarRespuesta("Guardeselo y deje de ser tan nena");
+          }
+
+          if (val === 9) {
+            desplegarRespuesta("Aguantese y listo");
+          }
+
+          if (val === 10) {
+            desplegarRespuesta("Y a mi que me importa?");
+          }
+
+          if (val === 11) {
+            desplegarRespuesta("Pues chupe y aguante");
+          }
+
+          if (val === 12) {
+            desplegarRespuesta("Guardese sus problemas y madure");
+          }
+
+          if (val === 13) {
+            desplegarRespuesta("Severa flor, deje de chillar");
+          }
+
+          if (val === 14) {
+            desplegarRespuesta("Y eso que me importa?");
+          }
+
+          if (val === 15) {
+            desplegarRespuesta("Bueno, y eso que me importa?");
+          }
+
+          if (val === 16) {
+            desplegarRespuesta("Y si mejor se calla?");
+          }
+
+          if (val === 17) {
+            desplegarRespuesta("Y eso en que me incumbe?");
+          }
+
+          if (val === 18) {
+            desplegarRespuesta("Solucionelo usted solo y no me joda");
+          }
+
+          if (val === 19) {
+            desplegarRespuesta("Que flor mas delicada, madure");
+          }
+
+          if (val === 20) {
+            desplegarRespuesta("No me importa");
+          }
         }
 
-        if (val === 2) {
-          desplegarRespuesta("Deje de chillar y sea hombre");
-        }
+        else{
+          if (val === 1) {
+            desplegarRespuesta("Y si vas a terapia mejor?");
+          }
 
-        if (val === 3) {
-          desplegarRespuesta("No sea loca");
-        }
+          if (val === 2) {
+            desplegarRespuesta("Has buscado alguien con quien hablarlo?");
+          }
 
-        if (val === 4) {
-          desplegarRespuesta("Que delicado para ser hombre");
-        }
+          if (val === 3) {
+            desplegarRespuesta("Es terrible escuchar eso");
+          }
 
-        if (val === 5) {
-          desplegarRespuesta("Sea hombre y listo");
-        }
+          if (val === 4) {
+            desplegarRespuesta("Que terrible noticia");
+          }
 
-        if (val === 6) {
-          desplegarRespuesta("No llore tanto");
-        }
+          if (val === 5) {
+            desplegarRespuesta("Lamento escuchar eso");
+          }
 
-        if (val === 7) {
-          desplegarRespuesta("Ese se su problema, no fastidie");
-        }
+          if (val === 6) {
+            desplegarRespuesta("Y has hablado con alguien al respecto?");
+          }
 
-        if (val === 8) {
-          desplegarRespuesta("Guardeselo y deje de ser tan nena");
-        }
+          if (val === 7) {
+            desplegarRespuesta("Que cosa tan fea eso");
+          }
 
-        if (val === 9) {
-          desplegarRespuesta("Aguantese y listo");
-        }
+          if (val === 8) {
+            desplegarRespuesta("Que vaina");
+          }
 
-        if (val === 10) {
-          desplegarRespuesta("Y a mi que me importa?");
-        }
+          if (val === 9) {
+            desplegarRespuesta("Deberias hablarlo con alguien");
+          }
 
-        if (val === 11) {
-          desplegarRespuesta("Pues chupe y aguante");
-        }
+          if (val === 10) {
+            desplegarRespuesta("Que mala noticia escuchar eso");
+          }
 
-        if (val === 12) {
-          desplegarRespuesta("Guardese sus problemas y madure");
-        }
+          if (val === 11) {
+            desplegarRespuesta("Que cosa tan mala escuchar eso");
+          }
 
-        if (val === 13) {
-          desplegarRespuesta("Severa flor, deje de chillar");
-        }
+          if (val === 12) {
+            desplegarRespuesta("Y si hablas con alguien al respecto");
+          }
 
-        if (val === 14) {
-          desplegarRespuesta("fY eso que me importa?");
-        }
+          if (val === 13) {
+            desplegarRespuesta("Deberias comentarselo a alguien");
+          }
 
-        if (val === 15) {
-          desplegarRespuesta("Bueno, y eso que me importa?");
-        }
+          if (val === 14) {
+            desplegarRespuesta("Se fuerte que tu puedes");
+          }
 
-        if (val === 16) {
-          desplegarRespuesta("Y si mejor se calla?");
-        }
+          if (val === 15) {
+            desplegarRespuesta("Dale que tu puedes con toda");
+          }
 
-        if (val === 17) {
-          desplegarRespuesta("Y eso en que me incumbe?");
-        }
+          if (val === 16) {
+            desplegarRespuesta("Con toda a darle pues");
+          }
 
-        if (val === 18) {
-          desplegarRespuesta("Solucionelo usted solo y no me joda");
-        }
+          if (val === 17) {
+            desplegarRespuesta("Espero que mejores");
+          }
 
-        if (val === 19) {
-          desplegarRespuesta("Que flor mas delicada, madure");
-        }
+          if (val === 18) {
+            desplegarRespuesta("Mejorate pronto");
+          }
 
-        if (val === 20) {
-          desplegarRespuesta("No me importa");
-        }
-      }
+          if (val === 19) {
+            desplegarRespuesta("Que cosas no?");
+          }
 
-      else{
-        if (val === 1) {
-          desplegarRespuesta("Y si vas a terapia mejor?");
-        }
-
-        if (val === 2) {
-          desplegarRespuesta("Has buscado alguien con quien hablarlo?");
-        }
-
-        if (val === 3) {
-          desplegarRespuesta("Es terrible escuchar eso");
-        }
-
-        if (val === 4) {
-          desplegarRespuesta("Que terrible noticia");
-        }
-
-        if (val === 5) {
-          desplegarRespuesta("Lamento escuchar eso");
-        }
-
-        if (val === 6) {
-          desplegarRespuesta("Y has hablado con alguien al respecto?");
-        }
-
-        if (val === 7) {
-          desplegarRespuesta("Que cosa tan fea eso");
-        }
-
-        if (val === 8) {
-          desplegarRespuesta("Que vaina");
-        }
-
-        if (val === 9) {
-          desplegarRespuesta("Deberias hablarlo con alguien");
-        }
-
-        if (val === 10) {
-          desplegarRespuesta("Que mala noticia escuchar eso");
-        }
-
-        if (val === 11) {
-          desplegarRespuesta("Que cosa tan mala escuchar eso");
-        }
-
-        if (val === 12) {
-          desplegarRespuesta("Y si hablas con alguien al respecto");
-        }
-
-        if (val === 13) {
-          desplegarRespuesta("Deberias comentarselo a alguien");
-        }
-
-        if (val === 14) {
-          desplegarRespuesta("Se fuerte que tu puedes");
-        }
-
-        if (val === 15) {
-          desplegarRespuesta("Dale que tu puedes con toda");
-        }
-
-        if (val === 16) {
-          desplegarRespuesta("Con toda a darle pues");
-        }
-
-        if (val === 17) {
-          desplegarRespuesta("Espero que mejores");
-        }
-
-        if (val === 18) {
-          desplegarRespuesta("Mejorate pronto");
-        }
-
-        if (val === 19) {
-          desplegarRespuesta("Que cosas no?");
-        }
-
-        if (val === 20) {
-          desplegarRespuesta("Terrible que estes asi");
+          if (val === 20) {
+            desplegarRespuesta("Terrible que estes asi");
+          }
         }
       }
     }
